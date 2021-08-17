@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 import Box from "./components/Box"
 import "./styles/global.css"
 
@@ -15,6 +14,9 @@ export class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
+        <p>Heart : {heartMax}</p>
+        <p>Temperature : {tempMin}</p>
+        <p>Steps : {stepsMin}</p>
           {/* Box Water */}
           <Box icon="local_drink" color="#3A85FF" value="1.5" unit="L" />
           {/* Box Steps */}
@@ -23,9 +25,6 @@ export class App extends React.Component {
           <Box icon="favorite" color="red" value="120" unit="bpm" />
           {/* Box Temperature */}
           <Box icon="wb_sunny" color="yellow" value="-10" unit="°C" />
-          <p>Heart : {heartMax}</p>
-          <p>Temperature : {tempMin}</p>
-          <p>Steps : {stepsMin}</p>
         </div>
       </div>
     );

@@ -10,3 +10,12 @@
     height: 190px;
     padding: 8px;
 }
+
+span {
+    margin: 0 50px;
+    padding: 0 50px;
+}
+
+p {
+    text-align: center;
+}
